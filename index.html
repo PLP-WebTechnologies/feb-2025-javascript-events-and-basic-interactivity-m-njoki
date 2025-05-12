@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Interactive Web App</h1>
+
+  <!-- Button to Change Text or Color -->
+  <button id="changeButton">Click Me!</button>
+
+  <!-- Image Gallery -->
+  <div id="imageGallery">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD0h7Ak0ZbaJn-GEeHYrrWZ0Umivj60zIUpg&s" alt="Image 1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7g2YQecbizoHSo4SaZMCUXvKr4sqIaI9aDw&s" alt="Image 2">
+    <img src="https://res.cloudinary.com/brickandbatten/images/w_2560,h_1566,c_scale/f_auto,q_auto/v1713267421/wordpress_assets/313364-Alabaster-Caviar-TeakStain-A-copy/313364-Alabaster-Caviar-TeakStain-A-copy.jpg?_i=AA" alt="Image 3">
+  </div>
+
+  <!-- Accordion Tabs -->
+  <div class="tabs">
+    <button class="tab" onclick="toggleTab('tab1')">Tab 1</button>
+    <button class="tab" onclick="toggleTab('tab2')">Tab 2</button>
+    <button class="tab" onclick="toggleTab('tab3')">Tab 3</button>
+    <div id="tab1" class="content">Content for Tab 1</div>
+    <div id="tab2" class="content">Content for Tab 2</div>
+    <div id="tab3" class="content">Content for Tab 3</div>
+  </div>
+
+  <!-- Form Validation -->
+  <form id="myForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required minlength="8">
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
